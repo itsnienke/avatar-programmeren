@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'azn_unifiedoblique';
+    src: url('webfontkit-20230326-112648/aznunified-oblique-trial-webfont.woff2') format('woff2'),
+         url('webfontkit-20230326-112648/aznunified-oblique-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root {
+    --font1: azn_unifiedoblique, sansserif;
+    --purple:#392139;
+    --white: #ffff;
+    --blue: #0B6F93;
+    --lightBlue: #45C5D3;
+    --red: #820909;
+    --green: #1EC02E;
+}
+
+body {
+    background-image: url('img/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: var(--font1);
+    color: var(--white);
+    text-align: center;
+    font-size: 5vw;
+}
+
+#countdown {
+    color: var(--white);
+    font-family: var(--font1);
+    text-align: center;
+    font-size: 2vw;
+}
+
+#zukoBar {
+    width: 20em;
+    height: 20px;
+    background-color: var(--green);
+    margin: 0em 5em;
+    transition: width 0.5s ease-in-out,  background-color 0.5s ease-in-out;
+  }
+
+  
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    margin: -1em 10em 0em 2em;
+}
+
+#kataraBar {
+    width: 20em;
+    height: 20px;
+    background-color: var(--green);
+    margin: 0em 5em;
+    transition: width 0.5s ease-in-out,  background-color 0.5s ease-in-out;
+    animation-delay: 1s; 
+  }
+
+button {
+    background-color: var(--blue);
+    font-size: 2em;
+    padding: 0.5em;
+    margin: 1em 0.5em 0em;
+    border: none;
+    font-family: var(--font1);
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #054258;
+}
+
+#messageLost {
+    font-family: var(--font1);
+    color: var(--red);
+    text-align: center;
+    font-size: 15vw;
+    margin: -2.5em;
+}
+
+#messageWon {
+    font-family: var(--font1);
+    color: var(--lightBlue);
+    text-align: center;
+    font-size: 15vw;
+    margin: -2.5em; 
+}
